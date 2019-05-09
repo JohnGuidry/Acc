@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edit_message" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enterMessage"
+        android:text="@string/button_enter" />
+
+    <TextView
+        android:id="@+id/acceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: Y: Z:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Counter: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnitude: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/peakAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peakAccumulate: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/peaks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peaks: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/peakMeanDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peakMean: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/thresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ThreshHold: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        <Button
+            android:id="@+id/lineGraph"
+            android:layout_height="wrap_content"
+            android:onClick="lineGraphHandler"
+            android:layout_width="fill_parent"
+            android:text="@string/end"/>
+
+</LinearLayout>
